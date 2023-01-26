@@ -1,8 +1,5 @@
-const express = require('express')
-const app = express()
 
-app.get('/', (req, res) => {
-res.send('Hello World!5');
+
 // Invocamos o leitor de qr code
 const qrcode = require('qrcode-terminal');
 
@@ -15,14 +12,10 @@ client.on('qr', qr => {
 });
 // apos isso ele diz que foi tudo certin 
 client.on('ready', () => {
-    res.send('Hello World!6');
+    
 });
 
 // E inicializa tudo para fazer a nossa magica =)
 client.initialize();
 const delay = ms => new Promise(res => setTimeout(res, ms)); // FunÃ§Ã£o que usamos para criar o delay entre uma aÃ§Ã£o e outra
 
-})
-
-var port = process.env.PORT || '3000';
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
