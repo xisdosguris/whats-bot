@@ -4,6 +4,10 @@
     "node" : ">=14.0.0 <17.0.0"
   },
 
+  "name": "whats-bot-xis",
+  "version": "0.1.0",
+  "private": true,
+
   "requires": true,
   "lockfileVersion": 1,
   "dependencies": {
