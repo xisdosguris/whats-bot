@@ -1,8 +1,15 @@
+const express = require("express");
 const puppeteer = require("puppeteer");
+
+const app = express();
+app.set("port", process.env.PORT || 5000);
+
 const browserP = puppeteer.launch({
   args: ["--no-sandbox", "--disable-setuid-sandbox"]
 });
 
+
+app.get("/", (req, res) => {
 // Invocamos o leitor de qr code
 const qrcode = require('qrcode-terminal');
 
@@ -18,7 +25,5 @@ client.on('ready', () => {
     
 });
 
-// E inicializa tudo para fazer a nossa magica =)
-client.initialize();
-const delay = ms => new Promise(res => setTimeout(res, ms)); // FunÃ§Ã£o que usamos para criar o delay entre uma aÃ§Ã£o e outra
+});
 
