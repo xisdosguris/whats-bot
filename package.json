@@ -4,14 +4,12 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.16.3",
     "qrcode-terminal": "^0.12.0",
     "whatsapp-web.js": "^1.19.2"
   },
   "devDependencies": {},
   "scripts": {
     "start": "node index.js",
-    "start_azure_debug": "if [[ ${APPSVC_TUNNEL_PORT} != \"\" ]]; then node --inspect=0.0.0.0:$APPSVC_TUNNEL_PORT index.js; else npm run start; fi",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
