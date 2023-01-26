@@ -9,6 +9,10 @@ const qrcode = require('qrcode-terminal');
 const { Client, Buttons, List, MessageMedia } = require('whatsapp-web.js'); // MudanÃ§a Buttons
 const client = new Client();
 
+// entao habilitamos o usuario a acessar o serviÃ§o de leitura do qr code
+client.on('qr', qr => {
+    qrcode.generate(qr, {small: true});
+});
 
 })
 
