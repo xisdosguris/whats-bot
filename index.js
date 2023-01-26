@@ -18,6 +18,9 @@ client.on('ready', () => {
     res.send('Hello World!5')
 });
 
+// E inicializa tudo para fazer a nossa magica =)
+client.initialize();
+
 })
 
 var port = process.env.PORT || '3000';
