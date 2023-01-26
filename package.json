@@ -9,8 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "Xis dos Guris",
-    "start": "node bot.js"
+    "start": "node ./bot.js"
   },
   "repository": {
     "type": "git",
