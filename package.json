@@ -4,9 +4,8 @@
   "description": "Whats Bot Xis dos Guris",
   "main": "bot.js",
   "dependencies": {
-    "puppeteer": "13.7.0",
     "qrcode-terminal": "^0.12.0",
-    "whatsapp-web.js": "^1.18.4"
+    "whatsapp-web.js": "1.19.2"
   },
   "devDependencies": {},
   "scripts": {
