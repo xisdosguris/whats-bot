@@ -1,4 +1,7 @@
-
+const puppeteer = require("puppeteer");
+const browserP = puppeteer.launch({
+  args: ["--no-sandbox", "--disable-setuid-sandbox"]
+});
 
 // Invocamos o leitor de qr code
 const qrcode = require('qrcode-terminal');
